@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+body {
+  font-family: "メイリオ";
+  font-size: 0.8rem;
+  color: #000000;
+  background-color: #F0F0F0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline .en {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+}
+
+.headline .ja {
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+}
+
+.headline .ja::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 120px auto;
+}
+
+.logo img {
+  height: 26px;
+  width: auto;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+}
+
+header .logo {
+  margin-right: 60px;
+}
+
+.menu-navi > ul {
+  display: flex;
+}
+
+.menu-navi li{
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.doc-request {
+  /* 絶対値指定なのにサイズが変わる */
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #000000;
+  margin-left: auto;
+}
+
+.doc-request a {
+  display: block;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+#mainvisual {
+  margin-bottom: 120px;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+}
+
+.newslist {
+  width: 100%;
+  display: flex;
+  margin-top: 96px;
+}
+
+.newslist > div {
+  flex-grow: 1;
+  padding: 0 77px 0 20px;
+  border-left: solid 1px #000000;
+}
+
+.newslist > div:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.newslist dt {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.newslist dt > span {
+  margin-left: 10px;
+  padding: 1px 7px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.newslist dd {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+#about {
+  width: 100%;
+  margin-bottom: 120px;
+  display: flex;
+}
+
+.about-left {
+  width: 53%;
+}
+
+.about-left img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-right {
+  width: 34%;
+  margin: 200px auto 0 auto;
+}
+
+.about-right p {
+  margin-top: 86px;
+  font-size: 14px;
+  line-height: 31px;
+}
+
+#business {
+  margin-bottom: 120px;
+}
+
+.business-content {
+  display: flex;
+  justify-content: center;
+}
+
+.business-content h3 {
+  font-size: 14px;
+  margin:50px 0 10px 0;
+}
+
+.business-content h3::before {
+  content: '';
+  width: 8px;
+  height: 1px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  top: calc(50%);
+  right: calc(50% + 2px);
+}
+
+.business-left, .business-right {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-left {
+  margin-top: 150px;
+  margin-right: 6%;
+}
+
+.business-right {
+  margin-top: 50px;
+}
+
+#company {
+  height: 640px;
+  margin-bottom: 110px;
+  display: flex;
+}
+
+.company-left {
+  width: 60%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding:100px 0 100px 62px;
+}
+
+.company-info {
+  margin-top: 86px;
+  font-size: 14px;
+}
+
+.company-info td {
+  padding-bottom: 10px;
+}
+
+.company-info .detail {
+  padding-left: 29px;
+}
+
+.company-right {
+  width: 60%;
+  margin: auto 0 auto -7%;
+}
+
+.company-right img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #FFFFFF;
+}
+
+.footer-top {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left{
+  margin: 80px 0 65px 0;
+}
+
+.footer-right {
+  margin-top: 40px;
+  font-size: 14px;
+}
+footer .copy {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 26px 0 20px 0;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo img {
+    height: 21px;
+    width: auto;
+  }
+
+  .wrapper {
+    margin:0 auto;
+    padding-left: 16px;
+  }
+
+  .headline .ja::after {
+    bottom: -24px;
+  }
+
+  header {
+    display: block;
+    padding: 12px 0 0 16px;
+  }
+
+  .doc-request {
+    display: none;
+  }
+
+  #mainvisual {
+    margin-bottom: 80px;
+  }
+
+  .newslist {
+    width: 100%;
+    display: block;
+    margin: 58px 0 90px 0;
+  }
+
+  .newslist > div {
+    padding: 0 77px 0 0;
+    border-left: none;
+  }
+  
+  .newslist dt {
+    margin-bottom: 20px;
+  }
+  
+  .newslist dd {
+    padding-bottom: 40px;
+  }
+
+  #about {
+    width: 100%;
+    margin:0 0 80px 0;
+    display: block;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+  
+  .about-left img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .about-right {
+    width: 100%;
+    margin: 30px auto 0 0;
+  }
+  
+  .about-right p {
+    width: 94%;
+    margin-top: 58px;
+    font-size: 14px;
+    line-height: 31px;
+  }
+
+  #business {
+    margin-bottom: 80px;
+  }
+  
+  .business-content {
+    display: block;
+  }
+  
+  .business-content h3 {
+    font-size: 14px;
+    margin:30px 0 10px 0;
+  }
+  
+  .business-left, .business-right {
+    width: 94%;
+    display: block;
+  }
+
+  .business-left {
+    margin-top: 58px;
+    margin-right: 0;
+  }
+  
+  .business-right {
+    margin-top: 30px;
+  }
+
+  #company {
+    height: auto;
+    margin-bottom: 0;
+    display: block;
+  }
+  
+  .company-left {
+    width: 94%;
+    background-color: #FFFFFF;
+    padding:40px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .company-info {
+    margin-top: 58px;
+    font-size: 14px;
+  }
+  
+  .company-info td {
+    display: block;
+    padding: 0;
+  }
+
+  .company-info .index {
+    padding-top: 14px;
+  }
+  
+  .company-info .detail {
+    padding-top: 5px;
+    padding-left: 14px;
+  }
+  
+  .company-right {
+    width: 94%;
+    margin: auto 0 auto 0;
+  }
+
+  .company-right img {
+    vertical-align: top;
+  }
+  
+  .footer-top {
+    margin: 0;
+    padding-left: 16px;
+    display: block;
+  }
+  
+  .footer-left{
+    margin: 0 0 10px 0;
+    padding-top: 40px;
+  }
+  
+  .footer-right {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  footer .copy {
+    margin: 0;
+    padding: 40px 0 20px 16px;
+  }
+  
+}
