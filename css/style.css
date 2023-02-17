@@ -282,8 +282,8 @@ footer .copy {
   }
 
   .wrapper {
-    margin:0 auto;
-    padding-left: 16px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
 
   .headline .ja::after {
@@ -339,11 +339,11 @@ footer .copy {
   
   .about-right {
     width: 100%;
-    margin: 30px auto 0 0;
+    margin-top: 30px;
+    padding: 0 16px;
   }
   
   .about-right p {
-    width: 94%;
     margin-top: 58px;
     font-size: 14px;
     line-height: 31px;
@@ -363,17 +363,16 @@ footer .copy {
   }
   
   .business-left, .business-right {
-    width: 94%;
+    width: 100%;
     display: block;
   }
 
   .business-left {
-    margin-top: 58px;
-    margin-right: 0;
+    margin: 58px 0 0 0;
   }
   
   .business-right {
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
   }
 
   #company {
@@ -383,7 +382,7 @@ footer .copy {
   }
   
   .company-left {
-    width: 94%;
+    width: 100%;
     background-color: #FFFFFF;
     padding:40px 20px;
     margin-bottom: 20px;
@@ -409,7 +408,7 @@ footer .copy {
   }
   
   .company-right {
-    width: 94%;
+    width: 100%;
     margin: auto 0 auto 0;
   }
 
